@@ -1,0 +1,11 @@
+
+
+- name: Install database packages
+  yum: 
+    name: "{{ item }}"
+    state: latest
+  with_items: "{{ db_packages }}"
+  tags:
+    - dev
+  notify:
+    - start_db

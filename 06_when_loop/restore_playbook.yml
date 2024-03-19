@@ -1,0 +1,36 @@
+- name: DB tkrwp
+  hosts: all
+  tasks:
+  - name: DB 서비스 종료
+    service:
+      name: mariadb
+      state: starte
+      enabled: no
+
+  - name: DB 패키지 삭제
+    yum:
+      name: "{{ pkg_db }}"
+      state: absent
+    vars:
+      pkg_db:
+      - mariadb-server
+      - python3-PyMySQL
+    when: ansible_distribution == 'CentOS'
+          
+
+
+
+
+
+
+      
+
+     # yum:
+    #   name: "{{ item }}"
+    #   state: latest
+    # loop: "{{ pkg_db }}"
+    # vars:
+    #   pkg_db: 
+    #   - mariadb-server
+    #   - python3-PyMySQL
+    # yum -y install mariadb-server python3-PyMySQL

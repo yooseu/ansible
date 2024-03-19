@@ -1,0 +1,49 @@
+---
+# Web Server Configuration
+# * 1) Install packages
+#     # yum -y install httpd mod_ssl
+# * 2) Web server settings
+#     # scp files/index.html ansible#:/var/www/html/index.html
+# * 3) Web service startup
+      # systemctl enbla --now httpd
+# * 4) Firewall registration
+      # firewall-cmd --permanent -add-service={http,https}
+# * 5) SELinux(?)
+
+- name: Install and start Apache httpd
+  hosts: webservers
+  tasks:
+    - name: Install packages
+      yum:
+       name:
+           - httpd
+           - mod_ssl
+       state: present
+
+    - name: Web server settings
+      copy:
+        src: files/index.html
+        dest: /var/www/html/index.html
+
+    - name: Web service startup
+      service:
+          name: httpd
+          state: started
+          enabled:  yes
+
+    - name: Firewall registration -http
+      firewalld:
+        service: http
+        permanent: true
+        immediate: true
+        state: enabled    
+       
+    - name: Firewall registration -http
+      firewalld:
+        service: http
+        permanent: true
+        immediate: true
+        state: enabled
+
+   
+    

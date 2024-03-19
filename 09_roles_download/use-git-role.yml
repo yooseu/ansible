@@ -1,0 +1,5 @@
+---
+- name: use davidkarban.git role playbook
+  hosts: webservers
+  roles:
+  - gano2018.ansible_git

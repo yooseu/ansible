@@ -1,0 +1,14 @@
+[asia_datacenter]
+ansible1.example.com
+ansible2.example.com
+ansible3.example.com
+ansible4.example.com
+
+[asia_datacenter]
+ansible3.example.com
+
+[asia_datacenter]
+ansible4.example.com
+
+[datacenters:children]
+asia_datacenter

@@ -1,0 +1,28 @@
+- name: Remove and Stop Web service
+  hosts: all
+  tasks: 
+  - name: Disable service - http, https
+    firewalld:
+      service: "{{ item  }}"
+      permanent: yes
+      immediate: yes
+      state: disabled
+    loop:
+      - http
+
+  - name: Disable service - httpd
+    service: 
+      name: httpd
+      state: stopped
+      enabled: no
+    ignore_errors: yes
+    
+  - name: Remove the file - /var/www/html/index.html
+    file:
+      path: /var/www/html/'index.html'
+      state: absent
+  - name: remove the package - httpd, mod_ssl
+    yum:
+      name: 
+        - httpd
+      state: absent

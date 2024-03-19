@@ -1,0 +1,25 @@
+---
+- name: DB 패키지 삭제
+  hosts:  all
+  gather_facts: no
+  vars_files:
+    - vars/db.yml
+  tasks:  
+  - name: DB 서비스 정료
+    service:
+      name: "{{ svc_db }}"
+      state: stopped
+      enabled: no
+    ignore_errors: yes
+
+  - name: DB(yum) 패키지 삭제
+    yum:
+      name: "{{ pkg_db }}"
+      state: absent   
+
+  - name: /etc/my.cnf 파일 삭제
+    file:
+      path: "{{ conf_dest }}"
+      state: absent
+  
+

@@ -1,0 +1,15 @@
+---
+- name: Prepare the web server
+  import_playbook: web.yml
+
+- name: Prepare the database server
+  import_playbook: db.yml
+
+- name: Play ONE
+  hosts: localhost
+  tasks:
+    - debug:
+        msg: Play one
+
+- name: Import Playbook
+  import_playbook: play2.yml

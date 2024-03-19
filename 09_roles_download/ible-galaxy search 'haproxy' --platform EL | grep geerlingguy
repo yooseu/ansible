@@ -1,0 +1,93 @@
+
+Found 178 roles matching your search:
+
+ Name                                             Description
+ ----                                             -----------
+ 9brandon2.haproxy                                Install and configure haproxy on your system.
+ aaronpederson.haproxy                            The Reliable, High Performance TCP/HTTP Load Balancer
+ acandid.haproxy                                  Install and Configure haproxy Redhat/CentOS 7 and Debian 10 from repository
+ alikins.haproxy                                  HAProxy installation and configuration.
+ andrewrothstein.haproxy                          installs HAProxy
+ ansiblebit.haproxy                               Role to setup haproxy.
+ antonmatsiuk.prom_haproxy_exporter               Prometheus HAProxy exporter on CentOS7 / RHEL7
+ automium.haproxy                                 Role for deploying HAProxy
+ awcrosby.ansible_haproxy                         Playbook for HAProxy.
+ bdellegrazie.haproxy_exporter                    Role to install Prometheus HAproxy Exporter
+ Blue-Bag.haproxy                                 HAProxy installation and configuration.
+ blurrcat.haproxy                                 Installs and configure haproxy
+ budimanjojo.haproxy                              Role to install and configure HAProxy
+ buluma.haproxy                                   Install and configure haproxy on your system.
+ caermeglaeddyv.ansible_role_haproxy              Linux / Kubernetes Administrator
+ calvinbui.ansible_haproxy_docker                 HAProxy in Docker
+ CaptTofu.galera-haproxy                          An ansible role for HAProxy which connects to a Galera/Percona XtraDB Cluster
+ castironclay.heartbeat_haproxy                   your description
+ Chillisystems.ansible-haproxy                    Set up the latest version of HAProxy in Ubuntu systems
+ chmduquesne.haproxy                              Installs and configures haproxy
+ chrislmayes.ansible_haproxy                      Installs and configure haproxy
+ ckaserer.haproxy                                 Set up the latest version of HAProxy in Ubuntu systems
+ Cloud-PG.haproxy-consul                          Install haproxy-consul
+ cmndrsp0ck.ansible-haproxy-tls-passthrough       haproxy configured with floating ip reassignment and TLS passthrough
+ colstrom.haproxy                                 The Reliable, High Performance TCP/HTTP Load Balancer
+ cowops.debian-haproxy                            Install Haproxy for debian system
+ CSCfi.haproxy                                    HAProxy installation and configuration.
+ cwerner1.haproxy                                 Set up the latest version of HAProxy in Ubuntu systems
+ danielino.haproxy                                Role to manage haproxy installation and balancer pool
+ deepakad903.ansible_haproxy_loadbalancer         your role description
+ devops.haproxy                                   Installs and configure haproxy
+ devops-coop.haproxy                              Installs and configure haproxy
+ dgnest.haproxy                                   This Ansible Role infuses antigravity, you are warned
+ diodonfrost.haproxy                              Ansible role for manage haproxy on large number of os
+ dmc5179.ansible_role_haproxy                     your role description
+ dottgonzo.ansible_haproxy_ingress                Ansible role to install HAProxy ingress on Kubernetes
+ dtoch56.haproxy                                  HaProxy server
+ ElaoInfra.haproxy                                Setup and config haproxy
+ emmetog.haproxy                                  HAProxy installation and configuration.
+ entercloudsuite.haproxy                          Playbook for HAProxy.
+ ernestomedina17.ansible_role_kube_devops_haproxy This role extends geerlingguy.haproxy to include SSL and a custom config as well as setting the ingress-nginx as backend.
+ evogalaxy.haproxy                                Installation and basic configuration of HAProxy
+ evrardjp.haproxy                                 Deploying HAProxy with simple but flexible configuration
+ exphost.haproxy                                  HAproxy load balancer
+ forsingh.haproxy                                 Installs and configure haproxy
+ geerlingguy.haproxy                              HAProxy installation and configuration.
+ gepaplexx.haproxy                                Set up the latest version of HAProxy in Ubuntu systems
+ goldstrike77.ansible_role_linux_haproxy          your description
+ grycap.haproxy                                   Installs HAProxy
+ hamidyousefi.haproxy                             The Reliable, High Performance TCP/HTTP Load Balancer
+ haos616.haproxy                                  Role to use Haproxy
+ haos616.haproxy-letsencrypt                      Role to use Letsencrypt with haproxy
+ hexanode.ansible_haproxy                         Ansible role that install and configure HAProxy for Debian Jessie & Stretch
+ hitotito.haproxy                                 role to install haproxy and configure
+ iaroslavb.haproxy                                HAProxy load balancer installation on Ubuntu Linux
+ ichundu.haproxy                                  Installs and configures HAProxy
+ idealista.prometheus_haproxy_exporter_role       Prometheus HAProxy Exporter Role
+ indigo-dc.haproxy-consul                         Install haproxy-consul
+ infOpen.ansible-role-haproxy                     Install and manage haproxy
+ innohub-ansible.haproxy                          Creates an haproxy deployment
+ jamesbelchamber.haproxy                          A role that installs HAProxy and simplifies common configurations
+ jebovic.haproxy                                  Install and configure HAProxy
+ jedimt.haproxy                                   Install HAProxy
+ jvcoelho.haproxy                                 Hproxy ansible role
+ jshima7.haproxy                                  ansible role of haproxy
+ justereseau.haproxy                              HAProxy installation and configuration.
+ jyotisp.haproxy_ansible_role                     This role along with the apache configuration role helps to automatically update the configuration file of haproxy and setup the reverse proxy
+ kaitsh.ansible_role_haproxy                      HAProxy installation and configuration.
+ kazoo-ansible.haproxy                            HAProxy Role for Kazoo Ansible
+ kbrebanov.haproxy                                Installs and configures haproxy
+ kefniark.haproxy-role                            Installs and configure haproxy
+ kevincoakley.haproxy                             HAProxy installation and configuration.
+ kunik.haproxy                                    install haproxy
+ leucos.haproxy-blue-green                        HAProxy blue-green deployments using backend switching
+ leucos.haproxy-multi                             HAproxy multi-configurations role
+ LIP-Computing.haproxy                            HAProxy installation and configuration.
+ Logan2211.ansible-haproxy                        Set up the latest version of HAProxy in Ubuntu systems
+ lotusnoir.apps_haproxy_exporter                  Install and configure haproxy exporter metrics for prometheus
+ lquissakng.ansible-fco-haproxy                   Role for HAProxy configuration
+ lr1980.ansible_haproxy_exporter                  Prometheus HAProxy Exporter
+ lukaspustina.haproxy                             Installs and configures HAProxy including SSL and SNI
+ mamercad.mariadb-galera-haproxy-keepalived       Stands up HA (keepalived) HAProxy in front of MariaDB Galera on RHEL/CentOS
+ manala.haproxy                                   Handle haproxy
+ manics.ansible-role-haproxy                      HAProxy installation and configuration.
+ mariancraciun1983.haproxy_ha_hetzner_cluster     Ansible role for configuring a Haproxy HA cluster with Corosync and automatic failover on Hetzner's Robot servers
+ maricaantonacci.ansible-role-haproxy-consul      Install haproxy-consul
+ mickalubs.ansible_role_haproxy_setup             Ansible role - deploying HA proxy environment
+ modcloth.newrelic-haproxy-agent                  Role to install and configu

@@ -1,0 +1,13 @@
+---
+- name: create user accounts for all our servers
+  hosts: all
+  become: true
+  remote_user: ansible
+  vars_files:
+    - secret2.yml
+  tasks:
+    - name: Remove user from secret.yml
+      user:
+        name: "{{ username }}"
+        state: absent
+        remove: yes

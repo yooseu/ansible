@@ -1,0 +1,31 @@
+---
+- name: Task Failure Exercise 실습 정리 작업 
+  hosts: databases
+  vars:
+    web_package: httpd     
+    db_package: mariadb-server
+    db_service: mariadb
+  tasks:    
+     - name: Unistall {{ web_package }} package
+       yum:
+         name: "{{ web_package }}"
+         state: absent
+
+ 
+#  mariadb 서비스 disable
+#  httpd 패키지 삭제
+#  mariadb-server 패키지 삭제
+#  restore_playbook.yml 작성하고 플레이한다.
+
+     - name: stop the {{ db_package }} package
+       yum:
+         name: "{{ db_package }}"
+         state: absent
+  
+
+     - name: Unintall the {{ db_service }} service
+       service:
+          name: "{{ db_service }}"
+          enabled: no
+          state: stopped
+       ignore_errors: yes

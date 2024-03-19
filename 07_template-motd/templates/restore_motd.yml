@@ -1,0 +1,17 @@
+---
+- name: /etc/motd 파일 배포
+  hosts: all
+  tasks:
+  - name: /etc/motd 파일을 4대의 서버에 파일 삭제하기
+    file:
+      path: /etc/motd
+      state: absent
+    
+  - name: /etc/motd 빈 파일 생성하기
+    file:
+      path: /etc/motd
+      state: touch
+
+  - name: /etc/motd 빈 파일 만들기
+    shell: 
+      cmd: '> /etc/motd'
